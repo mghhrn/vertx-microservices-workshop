@@ -18,10 +18,10 @@ public class JavaCompulsiveTraderVerticle extends MicroServiceVerticle {
   public void start(Future<Void> future) {
     super.start();
 
-    //TODO
-    //----
-    future.fail("no implemented yet...");
-    // ----
+    String company = TraderUtils.pickACompany();
+    int numberOfShares = TraderUtils.pickANumber();
+    System.out.println("Java compulsive trader configured for company " + company + " and shares: " + numberOfShares);
+
   }
 
 
